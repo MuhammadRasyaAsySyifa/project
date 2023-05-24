@@ -40,5 +40,25 @@ function order($data) {
     return mysqli_affected_rows($conn);
 }
 
+function ticket($data) {
+    global $conn;
+
+    $puskesmas = htmlspecialchars($data["rujuk"]);
+    $pasien = htmlspecialchars($data["nama"]);
+    $keluhan = htmlspecialchars($data["keluhan"]);
+    $tanggal = htmlspecialchars($data["tanggal"]);
+    $poli = htmlspecialchars($data["poli"]);
+
+    $query = "INSERT INTO ticket VALUES (
+        '',
+        '$puskesmas',
+        '$pasien',
+        '$keluhan',
+        '$tanggal',
+        '$poli'
+    )";
+    mysqli_query($conn, $query);
+    return mysqli_affected_rows($conn);
+}
 
 ?>

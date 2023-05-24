@@ -45,10 +45,10 @@ $getMedicine = query("SELECT * FROM obat");
                     </div>
                     <div class="d-flex flex-column gap-1">
                         <div>
-                            <a class="btn btn-primary w-100" href="#">Coming Soon</a>
+                            <a class="btn btn-primary w-100" href="detail.php?id=<?= $gm["id"]; ?>">Detail Obat</a>
                         </div>
                         <div>
-                            <a class="btn btn-success w-100" href="cart.php?id=<?= $gm["id"]; ?>">Tambahkan ke Keranjang</a>
+                            <a class="btn btn-success w-100" href="cart.php?id=<?= $gm["id"]; ?>">Beli Obat</a>
                         </div>
                     </div>
                 </div>

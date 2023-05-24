@@ -53,7 +53,7 @@ if(isset($_POST["checkout"])) {
                     <label for="total">Total Harga :</label>
                     <input class="shadow-lg rounded" type="number" id="total" name="total" placeholder="Total Harga" required readonly>
                     <div class="d-flex justify-content-end">
-                    <button class="btn btn-success px-5" id="checkout" name="checkout">Checkout</button>
+                        <button class="btn btn-success px-5" id="checkout" name="checkout">Checkout</button>
                     </div>
                 </form>
             </div>
